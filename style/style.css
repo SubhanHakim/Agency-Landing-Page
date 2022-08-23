@@ -1,0 +1,44 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #161616;
+}
+
+nav {
+  background-color: #2e2e2e;
+  padding-top: 16px;
+  padding-bottom: 16px;
+}
+.container {
+  padding-left: 8%;
+  padding-right: 8%;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  justify-items: center;
+  align-items: center;
+}
+.logo h2 {
+  color: white;
+}
+
+.logo {
+  display: flex;
+  gap: 10px;
+}
+
+.menu .nav-item {
+  display: flex;
+  gap: 20px;
+}
+
+.menu .nav-item .item {
+  color: white;
+  list-style: none;
+}
