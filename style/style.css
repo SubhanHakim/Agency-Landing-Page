@@ -6,10 +6,12 @@
 
 body {
   background-color: #161616;
+  font-family: "Poppins";
 }
 
+/* navbar */
+
 nav {
-  position: fixed;
   background-color: #2e2e2e;
   padding-top: 16px;
   padding-bottom: 16px;
@@ -87,6 +89,83 @@ nav {
   display: none;
 }
 
+/* hero section */
+#hero {
+  height: 100vh;
+  padding-top: 135px;
+  padding-bottom: 135px;
+}
+.flex {
+  display: grid;
+  grid-template-columns: 30% auto;
+  row-gap: 56px;
+}
+.flex .left .head-text {
+  color: white;
+  font-size: 36px;
+  font-weight: 700;
+  font-family: "Poppins";
+}
+.flex .right .subtext {
+  color: #cdcdcd;
+  font-size: 20px;
+  line-height: 36px;
+  font-weight: 400;
+  font-family: "Poppins";
+}
+.flex .right .boxes {
+  display: flex;
+  justify-content: flex-start;
+  gap: 40px;
+}
+.flex .right .boxes .box {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  width: 155px;
+  height: 157px;
+  padding: 16px;
+  background-color: #2e2e2e;
+}
+.flex .right .boxes .box h3 {
+  color: white;
+  font-size: 32px;
+  line-height: 48px;
+}
+.flex .right .boxes .box span {
+  color: #cdcdcd;
+  /* width: 123px; */
+  font-size: 18px;
+  line-height: 20px;
+  letter-spacing: 0.001em;
+}
+.btn {
+  display: flex;
+  justify-content: center;
+  padding-top: 56px;
+}
+
+.button-Primary {
+  width: 200px;
+  height: 56px;
+  background-color: white;
+  border: none;
+  transition: all 0.2s ease-in;
+  color: #161616;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 24px;
+}
+.button-Primary:hover {
+  background-color: #fcce5b;
+}
+
+.sponsor {
+  margin-top: 105px;
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+}
 /* responsive */
 @media only screen and (max-width: 768px) {
   .header i {
@@ -102,7 +181,7 @@ nav {
     position: fixed;
     padding: 16px 8% 16px 8%;
     width: 100%;
-    height: 100%;
+    height: fit-content;
     right: 0;
     top: -100%;
     background-color: #2e2e2e;
@@ -113,7 +192,7 @@ nav {
   }
   .menu .nav-item {
     flex-direction: column;
-    padding-top: 60px;
+    padding-top: 28px;
   }
   .menu .nav-item {
     gap: 40px;
@@ -128,5 +207,53 @@ nav {
   .logo-toggle i {
     color: white;
     font-size: 18px;
+  }
+
+  /* hero section */
+
+  .flex {
+    display: flex;
+    flex-direction: column;
+    row-gap: 16px;
+  }
+  .flex .left .head-text {
+    text-align: center;
+  }
+
+  .flex .right .subtext {
+    text-align: center;
+    font-size: 16px;
+    line-height: 28px;
+  }
+  .flex .right .boxes {
+    margin-top: 20px;
+    justify-content: space-between;
+    gap: 20px;
+  }
+
+  .flex .right .boxes .box {
+    justify-content: space-evenly;
+    /* width: 120px; */
+  }
+  .flex .right .boxes .box h3 {
+    color: white;
+    font-size: 20px;
+    line-height: 32px;
+  }
+  .flex .right .boxes .box span {
+    color: #cdcdcd;
+    /* width: 123px; */
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: 0.001em;
+  }
+  .button-Primary {
+    width: 150px;
+  }
+  .sponsor {
+    margin-top: 50px;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
   }
 }
