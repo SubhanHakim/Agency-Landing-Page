@@ -9,9 +9,11 @@ body {
 }
 
 nav {
+  position: fixed;
   background-color: #2e2e2e;
   padding-top: 16px;
   padding-bottom: 16px;
+  width: 100%;
 }
 .container {
   padding-left: 8%;
@@ -19,26 +21,112 @@ nav {
 }
 
 .header {
+  height: 100%;
   display: flex;
   justify-content: space-between;
-  justify-items: center;
   align-items: center;
 }
-.logo h2 {
+
+.brand {
   color: white;
+  text-decoration: none;
+  font-family: "Poppins";
+  font-size: 24px;
+  line-height: 48px;
+  font-weight: 700;
+}
+.logo img {
+  width: 21px;
+  height: 22px;
 }
 
 .logo {
   display: flex;
   gap: 10px;
+  align-items: center;
+}
+
+.menu {
+  display: flex;
 }
 
 .menu .nav-item {
   display: flex;
+  align-items: center;
   gap: 20px;
 }
 
-.menu .nav-item .item {
+.menu .nav-item {
   color: white;
   list-style: none;
+  text-decoration: none;
+}
+.menu .nav-item .item a:hover {
+  color: #fcce5b;
+}
+
+.menu .nav-item .item a {
+  transition: 0.5 color ease-in-out;
+  font-size: 16px;
+  font-weight: 700;
+  font-family: "DM Sans";
+  line-height: 24px;
+  color: white;
+  list-style: none;
+  text-decoration: none;
+}
+.menu .nav-item i {
+  color: white;
+}
+
+.menu .logo-toggle {
+  display: none;
+}
+
+.header i {
+  display: none;
+}
+
+/* responsive */
+@media only screen and (max-width: 768px) {
+  .header i {
+    display: block;
+    color: white;
+    font-size: 18px;
+    cursor: pointer;
+  }
+  .menu {
+    /* display: none; */
+    transition: all 0.3s ease-in-out;
+    flex-direction: column;
+    position: fixed;
+    padding: 16px 8% 16px 8%;
+    width: 100%;
+    height: 100%;
+    right: 0;
+    top: -100%;
+    background-color: #2e2e2e;
+    z-index: 100;
+  }
+  .active {
+    top: -0%;
+  }
+  .menu .nav-item {
+    flex-direction: column;
+    padding-top: 60px;
+  }
+  .menu .nav-item {
+    gap: 40px;
+  }
+  .menu .logo-toggle {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .logo-toggle i {
+    color: white;
+    font-size: 18px;
+  }
 }

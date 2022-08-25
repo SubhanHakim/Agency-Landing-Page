@@ -4,6 +4,17 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- My Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@700&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet" />
+    <!-- My Icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+      integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- style css -->
     <link rel="stylesheet" href="/style/style.css" />
     <title>Saitama Studio</title>
   </head>
@@ -13,14 +24,22 @@
       <div class="header">
         <div class="logo">
           <img src="/assets/logo/Logo.png" alt="" />
-          <h2>Saitama Studio</h2>
+          <h2><a href="/" class="brand">Saitama Studio</a></h2>
         </div>
-        <div class="menu">
+        <i class="fa-solid fa-bars" id="openNav"></i>
+        <div class="menu" id="menuNav">
+          <div class="logo-toggle">
+            <div class="logo">
+              <img src="/assets/logo/Logo.png" alt="" />
+              <h2><a href="/" class="brand">Saitama Studio</a></h2>
+            </div>
+            <i class="fa-solid fa-xmark" id="closeNav"></i>
+          </div>
           <ul class="nav-item">
-            <li class="item">About</li>
-            <li class="item">Portofolio</li>
-            <li class="item">Blog</li>
-            <li class="item">Contact</li>
+            <li class="item"><a href="#">About</a></li>
+            <li class="item"><a href="#">Portofolio</a></li>
+            <li class="item"><a href="#">Blog</a></li>
+            <li class="item"><a href="">Contact</a></li>
           </ul>
         </div>
       </div>
