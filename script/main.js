@@ -8,3 +8,7 @@ openMenu.addEventListener("click", () => {
 closeNav.addEventListener("click", () => {
   menuNav.classList.remove("active");
 });
+
+// Arrow
+
+const iconNext = document.getElementById("icon-next");
