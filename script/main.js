@@ -9,6 +9,19 @@ closeNav.addEventListener("click", () => {
   menuNav.classList.remove("active");
 });
 
-// Arrow
+const userContainers = document.querySelectorAll(".user-container");
+const nextBtn = document.querySelectorAll(".next-btn");
+const prevBtn = document.querySelectorAll(".prev-btn");
 
-const iconNext = document.getElementById("icon-next");
+userContainers.forEach((item, i) => {
+  let containerDimensions = item.getBoundingClientRect();
+  let containerWidth = containerDimensions.width;
+
+  nextBtn[i].addEventListener("click", () => {
+    item.scrollLeft += containerWidth;
+  });
+
+  prevBtn[i].addEventListener("click", () => {
+    item.scrollLeft -= containerWidth;
+  });
+});

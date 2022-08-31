@@ -243,6 +243,7 @@ nav {
   display: grid;
   grid-template-columns: 40% auto;
   row-gap: 56px;
+  position: relative;
 }
 .container .flex .texting .head-text {
   /* width: 284px; */
@@ -250,27 +251,62 @@ nav {
   font-size: 58px;
   margin-bottom: 24px;
 }
-
-.arrow {
-  margin-top: 24px;
+.slide-img {
+  position: relative;
+  overflow: hidden;
+  padding: 20px;
 }
-
-.arrows i {
+.slide-img .user-container {
   display: flex;
-  align-items: center;
-  justify-content: center;
+  overflow-y: auto;
+  scroll-behavior: smooth;
+  gap: 35px;
+}
+.overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  opacity: 0;
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.2989) -11.7%, rgba(0, 0, 0, 0.49) 113.78%);
+  transition: 0.5s ease;
+}
+.overlay:hover {
+  opacity: 1;
+}
+.bg-image {
+  position: relative;
+  width: 100%;
+}
+.overlay .head-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+.user-container::-webkit-scrollbar {
+  display: none;
+}
+.slider-btn {
+  margin-top: 24px;
   width: 60px;
   height: 60px;
   background-color: #2e2e2e;
+  border: none;
   color: white;
   font-size: 24px;
+  transition: all 0.2s ease-in;
 }
-
-.arrows i:hover {
-  background-color: white;
+.slider-btn:hover {
   color: #2e2e2e;
+  background-color: white;
 }
-
 /* responsive */
 @media only screen and (max-width: 768px) {
   .header i {
