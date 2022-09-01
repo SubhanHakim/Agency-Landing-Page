@@ -91,11 +91,10 @@ nav {
 
 /* hero section */
 #hero {
-  /* height: 100vh; */
   padding-top: 135px;
 }
 .flex {
-  display: grid;
+  display: flex;
   grid-template-columns: 30% auto;
   row-gap: 56px;
 }
@@ -306,6 +305,51 @@ nav {
 .slider-btn:hover {
   color: #2e2e2e;
   background-color: white;
+}
+
+.works {
+  display: flex;
+  justify-content: space-between;
+  justify-items: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.see-our .subtext {
+  width: 453px;
+}
+.see-our .head-text {
+  font-size: 58px;
+}
+
+.porto {
+  display: flex;
+  justify-content: space-between;
+  gap: 100px;
+  align-items: center;
+  margin-top: 56px;
+}
+
+.desk .head-text {
+  margin-bottom: 24px;
+}
+
+.desk .subtext {
+  margin-bottom: 24px;
+}
+.about {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.about-us .head-text {
+  width: 410px;
+  font-size: 58px;
+}
+.desk-us {
+  width: 538px;
+  text-align: right;
 }
 /* responsive */
 @media only screen and (max-width: 768px) {
