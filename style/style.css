@@ -93,11 +93,6 @@ nav {
 #hero {
   padding-top: 135px;
 }
-.flex {
-  display: flex;
-  grid-template-columns: 30% auto;
-  row-gap: 56px;
-}
 .head-text {
   color: white;
   font-size: 36px;
@@ -111,12 +106,13 @@ nav {
   font-weight: 400;
   font-family: "Poppins";
 }
-.flex .right .boxes {
+.flex2 .right .boxes {
   display: flex;
   justify-content: flex-start;
+  margin-top: 24px;
   gap: 40px;
 }
-.flex .right .boxes .box {
+.flex2 .right .boxes .box {
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
@@ -125,12 +121,12 @@ nav {
   padding: 16px;
   background-color: #2e2e2e;
 }
-.flex .right .boxes .box h3 {
+.flex2 .right .boxes .box h3 {
   color: white;
   font-size: 32px;
   line-height: 48px;
 }
-.flex .right .boxes .box span {
+.flex2 .right .boxes .box span {
   color: #cdcdcd;
   font-size: 18px;
   line-height: 20px;
@@ -353,6 +349,32 @@ nav {
 }
 /* responsive */
 @media only screen and (max-width: 768px) {
+  .works {
+    flex-direction: column;
+  }
+  .see-our .subtext {
+    width: 100%;
+  }
+
+  .see-our .subtext {
+    text-align: center;
+  }
+  .porto {
+    flex-direction: column;
+  }
+  .porto .head-img img {
+    width: 100%;
+  }
+
+  .about {
+    flex-direction: column;
+    align-items: center;
+  }
+  .desk-us {
+    align-items: center;
+    text-align: center;
+    width: 100%;
+  }
   .header i {
     display: block;
     color: white;
@@ -395,54 +417,6 @@ nav {
   }
 
   /* hero section */
-
-  .flex {
-    display: flex;
-    flex-direction: column;
-    row-gap: 16px;
-  }
-  .flex .left .head-text {
-    text-align: center;
-  }
-
-  .flex .right .subtext {
-    text-align: center;
-    font-size: 16px;
-    line-height: 28px;
-  }
-  .flex .right .boxes {
-    margin-top: 20px;
-    justify-content: space-between;
-    gap: 20px;
-  }
-  .flex .right .boxes .box h3 {
-    color: white;
-    font-size: 32px;
-    line-height: 48px;
-  }
-  .flex .right .boxes .box span {
-    color: #cdcdcd;
-    font-size: 28px;
-    line-height: 20px;
-    letter-spacing: 0.001em;
-  }
-
-  .flex .right .boxes .box {
-    justify-content: space-evenly;
-    /* width: 120px; */
-  }
-  .flex .right .boxes .box h3 {
-    color: white;
-    font-size: 20px;
-    line-height: 32px;
-  }
-  .flex .right .boxes .box span {
-    color: #cdcdcd;
-    /* width: 123px; */
-    font-size: 14px;
-    line-height: 24px;
-    letter-spacing: 0.001em;
-  }
   .button-Primary {
     width: 150px;
   }
@@ -457,6 +431,7 @@ nav {
   .flex2 {
     display: flex;
     flex-direction: column;
+    text-align: center;
   }
   #content {
     margin-top: 100px;
