@@ -106,6 +106,10 @@ nav {
   font-weight: 400;
   font-family: "Poppins";
 }
+.flex2 .head-text {
+  font-size: 58px;
+  line-height: 74px;
+}
 .flex2 .right .boxes {
   display: flex;
   justify-content: flex-start;
@@ -241,7 +245,6 @@ nav {
   position: relative;
 }
 .container .flex .texting .head-text {
-  /* width: 284px; */
   line-height: 74px;
   font-size: 58px;
   margin-bottom: 24px;
@@ -342,13 +345,179 @@ nav {
 .about-us .head-text {
   width: 410px;
   font-size: 58px;
+  line-height: 74px;
 }
 .desk-us {
   width: 538px;
   text-align: right;
 }
+.comment {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  /* position: relative; */
+  margin-top: 100px;
+}
+.text-comment .subtext {
+  color: white;
+  z-index: 2;
+  position: absolute;
+  width: 770px;
+}
+.comment-img {
+  z-index: -1;
+}
+
+.text-comment .head-text {
+  font-size: 172px;
+  line-height: 223.94px;
+}
+
+footer {
+  margin-top: 160px;
+  padding: 56px 0 56px 0;
+}
+
+.footers {
+  display: flex;
+  justify-content: space-evenly;
+}
+.company {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.icons {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  border: none;
+  background-color: #161616;
+  color: white;
+  font-size: 16px;
+  transition: all 0.25s ease-in;
+}
+.icons:hover {
+  background-color: #dadada;
+  color: #161616;
+}
+.sosmeds {
+  display: flex;
+  gap: 12px;
+}
+
+.company img {
+  width: 21px;
+  height: 22px;
+}
+
+footer {
+  background: #2e2e2e;
+}
+.product h2 {
+  font-size: 18px;
+  margin-bottom: 12px;
+}
+
+.list-item {
+  margin-top: 10px;
+}
+
+.list-item a {
+  font-weight: 400;
+  text-decoration: none;
+  color: white;
+  line-height: 26px;
+  letter-spacing: -0.5px;
+  transition: all 0.2s ease-in-out;
+}
+.list-item a:hover {
+  color: #fcce5b;
+}
+.item {
+  display: flex;
+  justify-content: space-evenly;
+}
 /* responsive */
 @media only screen and (max-width: 768px) {
+  .footers {
+    display: flex;
+    justify-content: space-around;
+    gap: 100px;
+    flex-wrap: wrap;
+  }
+  .text-comment {
+    margin-top: -100px;
+  }
+  .comment {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  .container .flex {
+    display: flex;
+    flex-direction: column;
+  }
+  .bg-image {
+    width: 100%;
+  }
+  .comment {
+    flex-direction: column;
+  }
+  .text-comment .head-text {
+    margin-bottom: -100px;
+    font-size: 100px;
+  }
+  .text-comment .subtext {
+    color: white;
+    position: static;
+    z-index: 2;
+    width: 100%;
+  }
+  .comment-img {
+    position: static;
+  }
+  .comment-img img {
+    width: 100%;
+  }
+  .texting .head-text {
+    margin-top: 24px;
+    width: 100%;
+    font-size: 38px;
+    line-height: 56px;
+  }
+  .about-us .head-text {
+    margin-top: 24px;
+    text-align: center;
+    width: 100%;
+    font-size: 38px;
+    line-height: 56px;
+  }
+  .see-our .head-text {
+    text-align: center;
+    width: 100%;
+    font-size: 38px;
+    line-height: 56px;
+  }
+  .flex2 .head-text {
+    font-size: 36px;
+    line-height: 58px;
+  }
+
+  .flex2 .right .boxes .box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    padding: 16px;
+    background-color: #2e2e2e;
+  }
+
+  .flex2 .right .boxes {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 24px;
+    gap: 10px;
+  }
+
   .works {
     flex-direction: column;
   }
