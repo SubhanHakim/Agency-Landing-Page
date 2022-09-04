@@ -504,13 +504,13 @@ footer {
   }
 
   .flex2 .right .boxes {
-    width: 100px;
     justify-content: space-between;
   }
 
   .flex2 .right .boxes .box {
     display: flex;
     flex-direction: column;
+    width: 150px;
     justify-content: flex-end;
     padding: 16px;
     background-color: #2e2e2e;
