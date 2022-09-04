@@ -505,7 +505,7 @@ footer {
 
   .flex2 .right .boxes {
     width: 100px;
-    /* justify-content: space-between; */
+    justify-content: space-between;
   }
 
   .flex2 .right .boxes .box {
